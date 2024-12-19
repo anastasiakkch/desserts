@@ -4,13 +4,6 @@ function App() {
   const [desserts, setDesserts] = useState([]);
   const [cart, setCart] = useState([]);
 
-  useEffect(() => {
-    fetch("data.json")
-      .then((response) => response.json())
-      .then((data) => setDesserts(data.desserts))
-      .catch((error) => console.error("Error loading data:", error));
-  }, []);
-
   const addToCart = (dessert) => {
     setCart((prevCart) => [...prevCart, dessert]);
     alert(`${dessert.name} added to cart!`);
