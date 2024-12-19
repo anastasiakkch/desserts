@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(244, 217, 221);
+    display: flex;
+    justify-content: center;
+}
+
+  .img{
+    border-radius: 15px;
+    position: relative;
+  }
+  .dessert-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .dessert-image {
+    width: 150px;
+    height: auto;
+  }
+  .add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
